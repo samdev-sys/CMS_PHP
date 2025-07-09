@@ -8,8 +8,9 @@ $grupos=Controladorwsp::ctrGrupos();
 
 $categorias=Categorias::ctrCategorias();
 $anuncios=CtrAnuncios::ctranuncios();
-// var_dump($anuncios);
+var_dump($categorias);
 
+// echo $categorias [1][1];
 ?>
 <?php echo $ruta ;  ?>
 
@@ -42,11 +43,11 @@ $anuncios=CtrAnuncios::ctranuncios();
             
 
             include "modulos/".$url[0].".php";
-        }if($url[0]=="gamer"  ||
-            $url[0] =="Devops" ||
-            $url[0]== "Dinero"){
+        }if($url[0]== $categorias [0][1]  ||
+            $url[0] == $categorias [1][1] ||
+            $url[0]== $categorias [2][1]){
 
-                include "modulos/categorias.php";
+                include "modulos/gruposespecificos.php";
 
             } 
     }

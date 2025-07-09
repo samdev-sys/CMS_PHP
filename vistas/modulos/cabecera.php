@@ -44,7 +44,7 @@
                                     <!-- logo begin -->
                                     <div id="logo">
                                         <a href="03_grey-index.html">
-                                            <img alt="" src="<?php   echo $ruta; ?><?php   echo $ruta; ?>images/logo-3.png" />
+                                            <img alt="" src="<?php   echo $ruta; ?>images/logo-3.png" />
                                         </a>
                                     </div>
                                     <!-- logo close -->
